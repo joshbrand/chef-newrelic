@@ -161,3 +161,11 @@ collector_host=<%= @collector_host %>
 <% else %>
 timeout=<%= @timeout %>
 <% end %>
+
+# Option : hostname
+# https://docs.newrelic.com/docs/server/changing-the-linux-server-name#configuration-file
+<% if @timeout.nil? %>
+#hostname=myhost
+<% else %>
+timeout=<%= @hostname %>
+<% end %>
